@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*-----main----*/
+
+/*-----Header-----*/
+.header{
+ min-height: 100vh;
+ width: 100%;
+ background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://i.postimg.cc/NG35tdRH/BG-2.jpg);
+ background-position: center;
+ background-size: cover;
+ position : relative;
+}
