@@ -1,12 +1,9 @@
+/* Add all your styles here */
 *{
   margin: 0;
   padding: 0;
   font-family: 'Encode Sans Condensed', sans-serif;
 }
-
-/*-----main----*/
-
-
 
 .header{
  min-height: 100vh;
@@ -21,11 +18,11 @@ nav{
   display: flex;
   padding: 2% 6%;
   justify-content: space-between;
-  align-items: center;
+  align-item: center;
 }
 
 nav img{
- width: 150px;
+  width: 150px;
 }
 
 .nav-links{
@@ -37,8 +34,9 @@ nav img{
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
-  position: relative
+  position: relative;
 }
+
 
 .nav-links ul li a{
   color: #fff;
@@ -55,6 +53,7 @@ nav img{
   margin: auto;
   transition: 0.5s;
 }
+
 .nav-links ul li:hover::after{
   width: 100%;
 }
@@ -93,46 +92,26 @@ nav img{
   cursor: pointer;
 }
 
+
 .hero-btn:hover{
   border: 1px solid #f44336;
   background: #f44336;
   transition: 1s;
 }
 
-nav.fa{
-  display: none;
-}
 
-@media(max-width: 700px){
-   .text-box h1{
-     font-size: 20px
-   }
-   
+
+
+@media(max-width: 800px){
+  	.text-box h1{
+  	  font-size: 20px;
+  }
+  
   .nav-links ul li{
     display: block;
   }
   
- .nav-links{
-   position: absolute;
-   background: #f44336;
-   height: 100vh;
-   width: 200px;
-   top: 0;
-   right: -200;
-   text-align: left;
-   z-index: 2;
-   transition: 1s;
- }
- 
- nav .fa{
-   display: block;
-   color: #fff;
-   margin: 10px;
-   font-size: 22px;
-   cursor: position;
- }
- 
-  .nav-links ul{
-    padding: 30px;
+  .nav-links{
+    display: blok;
   }
 }
