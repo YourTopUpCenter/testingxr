@@ -1,4 +1,3 @@
-/* Add all your styles here */
 *{
   margin: 0;
   padding: 0;
@@ -13,6 +12,7 @@
  background-size: cover;
  position : relative;
 }
+
 
 nav{
   display: flex;
@@ -37,7 +37,6 @@ nav img{
   position: relative;
 }
 
-
 .nav-links ul li a{
   color: #fff;
   text-decoration: none;
@@ -53,6 +52,7 @@ nav img{
   margin: auto;
   transition: 0.5s;
 }
+
 
 .nav-links ul li:hover::after{
   width: 100%;
@@ -80,6 +80,7 @@ nav img{
   font-family: 'Kanit', sans-serif;
 }
 
+
 .hero-btn{
   display: inline-block;
   text-decoration: none;
@@ -92,17 +93,58 @@ nav img{
   cursor: pointer;
 }
 
-
 .hero-btn:hover{
   border: 1px solid #f44336;
   background: #f44336;
   transition: 1s;
 }
 
+.mein{
+  color: red;
+  text-align: center;
+}
 
 
 
-@media(max-width: 800px){
+.mo-menu{
+  flex: 1;
+  text-align: right;
+  display: none;
+}
+
+.mo-menu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+
+.mo-menu ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+
+.mo-menu ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+
+.mo-menu ul li:hover::after{
+  width: 100%;
+}
+
+
+
+@media(max-width: 700px){
   	.text-box h1{
   	  font-size: 20px;
   }
@@ -112,6 +154,9 @@ nav img{
   }
   
   .nav-links{
-    display: blok;
+    display: none;
   }
+  .mo-menu{
+   display: block;
+ }
 }
